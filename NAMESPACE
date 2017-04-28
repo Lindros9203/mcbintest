@@ -2,3 +2,5 @@ exportPattern("^[[:alpha:]]+")
 
 importFrom("stats", "ptukey", "qbeta", "qtukey")
 importFrom("utils", "combn")
+
+S3method(print,"bintest")

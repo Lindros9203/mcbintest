@@ -1,11 +1,11 @@
 Package: mcbintest
 Type: Package
 Title: Multiple comparisons of several binomial distributions
-Version: 0.1.0
+Version: 0.1.1
 Author: Linda R.
 Date: 2017-04-28
 Maintainer: Rostislav Linda <rostislav.linda.rl@gmail.com>
 Description: The generalization of binomial test (the homogeneity of proportion of two binomial distributions) for more than two factors (treatments).
-License: GPL-3
+License: file LICENSE
 Encoding: UTF-8
 LazyData: true

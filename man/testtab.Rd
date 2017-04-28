@@ -9,12 +9,12 @@ Sample dataset for \code{bin.test} function.
 }
 \usage{data("testtab")}
 \format{
-  A data frame with 3 observations on the following 4 variables.
+  A data frame with 3 observations on the following variables.
   \describe{
     \item{\code{treatment}}{a factor with levels \code{A} \code{B} \code{C}}
     \item{\code{alive}}{a numeric vector}
     \item{\code{dead}}{a numeric vector}
-    \item{\code{total}}{a numeric vector}
+    
   }
 }
 \details{
