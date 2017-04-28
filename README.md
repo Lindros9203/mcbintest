@@ -49,5 +49,11 @@ This table shows error bars distances (95%) for plotting the result.
 **obs_variable:**
 Variable (defined as name of second column of the input table) for which the ratio is computed.
 
+## Example
+For example, input
+```r
+bin.test(testtab)
+```
+into R console.
 ## Notes
 This package probably needs a lot of improvements. If you want to help with development, e.g. add the treatment names into output tables instead of its ID from input table, feel free to contact me or do whatever you want with the package.
