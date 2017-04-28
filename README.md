@@ -26,14 +26,14 @@ bin.test(input_table)
 The input data should be in following form:
 
 
-| Treatment     	| Outcome 1 	| Outcome 2 	| Total  	|
-|---------------:	|:---------:	|:---------:	|:------------------:	|
-| First option  	|     a     	|     b     	|         Sum of row 1 (a+b)        	|
-| Second option 	|     c     	|     d     	|         c+d        	|
-| Third option  	|     f     	|     g     	|         f+g        	|
-|      ...      	|    ...    	|    ...    	|        ...       	|
+| Treatment     	| Outcome 1 	| Outcome 2 	| 
+|---------------:	|:---------:	|:---------:	|
+| First option  	|     a     	|     b     	|
+| Second option 	|     c     	|     d     	|
+| Third option  	|     f     	|     g     	|
+|      ...      	|    ...    	|    ...    	|       	
 
-The *a*, *b* and *x* stands for counts of cases in respective treatment/outcome combination.
+The letters stands for counts of cases in respective treatment/outcome combination.
 The table shoud be of class ```data.frame```.
 
 ## Output
