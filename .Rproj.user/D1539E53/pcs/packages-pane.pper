@@ -1,7 +1,0 @@
-{
-    "installOptions" : {
-        "installDependencies" : true,
-        "installFromRepository" : true,
-        "libraryPath" : "/Users/rostislavlinda/anaconda/lib/R/library"
-    }
-}
