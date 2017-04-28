@@ -28,7 +28,7 @@ The input data should be in following form:
 
 | Treatment     	| Outcome 1 	| Outcome 2 	| 
 |---------------:	|:---------:	|:---------:	|
-| First option  	|     a     	|     b     	|
+| First option  	|     a (no. of cases)     	|     b     	|
 | Second option 	|     c     	|     d     	|
 | Third option  	|     f     	|     g     	|
 |      ...      	|    ...    	|    ...    	|       	
