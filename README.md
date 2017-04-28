@@ -31,7 +31,7 @@ The input data should be in following form:
 | First option  	|     a     	|     b     	|
 | Second option 	|     c     	|     d     	|
 | Third option  	|     f     	|     g     	|
-|      ...      	|    ...    	|    ...    	|       	|
+|      ...      	|    ...    	|    ...    	|       	
 
 The letters stands for counts of cases in respective treatment/outcome combination.
 The table shoud be of class ```data.frame```.
