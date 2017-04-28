@@ -1,5 +1,5 @@
 # mcbintest
-R package for multiple comparisons of several binomial distributions
+R package for multiple comparisons of several binomial distributions.
 ## Motivation
 This package was developed because of the need of applicable statistical procedure to compare numbers (proportions, respectively) of dead and alive trees after experiment between selected treatments. In our case, we were evaluating three variants of fertilization applied to young trees and recording number of surviving and dead individuals. The sample table is included (under name ```testtab```).
 ## Method, reference
