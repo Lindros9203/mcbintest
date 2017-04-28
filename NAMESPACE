@@ -1,0 +1,4 @@
+exportPattern("^[[:alpha:]]+")
+
+importFrom("stats", "ptukey", "qbeta", "qtukey")
+importFrom("utils", "combn")
