@@ -33,7 +33,7 @@ The input data should be in following form:
 | Third option  	|     f     	|     g     	|         f+g        	|
 |      ...      	|    ...    	|    ...    	|        ...       	|
 
-The "a, b and x" stands for counts of cases in respective treatment/outcome combination.
+The *a*, *b* and *x* stands for counts of cases in respective treatment/outcome combination.
 The table shoud be of class ```data.frame```.
 
 ## Output
