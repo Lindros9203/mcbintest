@@ -5,25 +5,21 @@ bin.test<-function(x,...){
     subtot<-x[i,2]+x[i,3]
     tot<-append(tot,subtot)
   }
-  x<-cbind(x,tot)
-  names(x)[4]="row total"
-  
-  # Preserve 4 columns
-  x<-x[,c(1:4)]
+
   
   # Vector of probabilities
   nrows<-length(x[,1])
   i<-1;p=NULL
   for(i in 1:nrows){
     p0<-p
-    p<-c(p0,((x[i,2])+1)/((x[i,4])+2))
+    p<-c(p0,((x[i,2])+1)/((tot[i])+2))
     i<-i+1
   }
   # Vector of observations
   i<-1;n=NULL
   for(i in 1:nrows){
     n0<-n
-    n<-c(n0,x[i,4])
+    n<-c(n0,tot[i])
     i<-i+1
   }
   # Vector of 1-p (q's)
