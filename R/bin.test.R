@@ -56,9 +56,16 @@ bin.test<-function(x,...){
     i<-i+1
   }
   # Results 1
-  result1<-round(matrix(c(combs[,1],combs[,2],mc,Qt,pval),ncol=5),4)
+  current_comparison<-NULL
+  for (i in 1:length(combs[,1])){
+    working_comp<-paste(x[combs[i,1],1],"-",x[combs[i,2],1])
+    working_comp<-toString(working_comp)
+    current_comparison<-append(current_comparison,working_comp)
+  }
+  result1<-round(matrix(c(mc,Qt,pval),ncol=3),4)
   result1<-as.data.frame(result1)
-  names(result1)<-c("Comp.1","Comp.2","Test.stat","Crit.value","p-value")
+  row.names(result1)<-current_comparison
+  names(result1)<-c("Test.stat","Crit.value","p-value")
 
   # p Confidence Intervals
   ##Vektor X
@@ -91,17 +98,19 @@ bin.test<-function(x,...){
   }
   # Results 2
   nms<-c(names(x))
-  result2<-round(matrix(c(1:nrows,pdecor,lower,upper),ncol=4),5)
+  result2<-round(matrix(c(pdecor,lower,upper),ncol=3),5)
   result2<-as.data.frame(result2)
-  names(result2)<-c("Table row","p","lower","upper")
+  row.names(result2)<-x[,1]
+  names(result2)<-c("p","lower","upper")
 
 
   # Error bars
   lw<-(pdecor-lower)
   up<-(upper-pdecor)
-  erbar<-round(matrix(c(1:nrows,lw,up),ncol=3),3)
+  erbar<-round(matrix(c(lw,up),ncol=2),3)
   erbar<-as.data.frame(erbar)
-  names(erbar)<-c("Table row","Lower","Upper")
+  names(erbar)<-c("Lower","Upper")
+  row.names(erbar)<-x[,1]
 
 
   res=list(mc=result1,CI=result2,errbars=erbar,obs_variable=nms[2])
