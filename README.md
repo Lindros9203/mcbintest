@@ -30,7 +30,7 @@ The input data should be in following form:
 |---------------:	|:---------:	|:---------:	|
 | First option  	|     a (no. of cases)     	|     b     	|
 | Second option 	|     c     	|     d     	|
-| Third option  	|     f     	|     g     	|
+| Third option  	|     e     	|     f     	|
 |      ...      	|    ...    	|    ...    	|       	
 
 The letters stands for counts of cases in respective treatment/outcome combination.
