@@ -109,7 +109,7 @@ bin.test<-function(x,...){
   up<-(upper-pdecor)
   erbar<-round(matrix(c(lw,up),ncol=2),3)
   erbar<-as.data.frame(erbar)
-  names(erbar)<-c("Lower","Upper")
+  names(erbar)<-c("lower","upper")
   row.names(erbar)<-x[,1]
 
 
