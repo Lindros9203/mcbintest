@@ -10,17 +10,17 @@ A function for performing multiple comparisons of several binomial distributions
 bin.test(x,...)
 }
 \arguments{
-  \item{x}{A data frame in required form (see details).}
+  \item{x}{A data frame in required form (see Details or README file).}
   \item{...}{Further arguments to be passed to or from methods.}
 }
 
 \details{
-The input data frame should have at least three columns and two rows (treatments), further columns are omitted. Each row for one variant (treatment). The treatment should be specified in the first column, second and third columns specify two options of the response. Each cell of the data frame should contain number (counts) of respective treatment/response combination.
+The input data frame should have at least three columns and two rows (treatments), each row for one variant (treatment). Further columns are omitted. The treatment should be specified in the first column, second and third columns specify two options of the response. Each cell of the data frame should contain number (counts) of respective treatment/response combination.
 
 For sample data, please see included data frame named \code{testtab}.
 }
 \value{
-\item{mc}{A data frame with results of multiple comparisons. The numbers in first two columns denotes "treatments" in respective rows of input data frame.}
+\item{mc}{A data frame with results of multiple comparisons. Row names specifies respective pairwise comparison.}
 \item{CI}{Confidence intervals for probability of ratio of counts in second/third column of \code{x}.}
 \item{errbars}{Length of error bars for denoting 95\% CI in plots}
 \item{obs_variable}{Variable, for whose probability the confidence intervals are computed (name of second column of input data frame \code{x})}
@@ -33,7 +33,7 @@ Agresti, A., Bini, M., Bertaccini, B. and Ryu, E. (2008), Simultaneous Confidenc
 Rostislav Linda
 }
 \note{
-The method works either with balanced or unbalanced data (total number of observations for each treatment), but does not work well when the ratio (probability) of counts in second/third column of input data frame \code{x} are very close to 0 or 1.
+The method works either with balanced or unbalanced data (total number of observations for each treatment), but does not work well when the ratio (probability) of counts in second/third column of input data frame \code{x} are very close to 0 or 1 (Agresti, Bini et al., 2008).
 }
 
 \examples{
