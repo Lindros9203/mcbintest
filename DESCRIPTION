@@ -1,7 +1,7 @@
 Package: mcbintest
 Type: Package
 Title: Multiple comparisons of several binomial distributions
-Version: 0.1.1
+Version: 0.1.2
 Author: Linda R.
 Date: 2017-04-28
 Maintainer: Rostislav Linda <rostislav.linda.rl@gmail.com>
