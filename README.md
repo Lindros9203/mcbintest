@@ -56,4 +56,4 @@ bin.test(testtab)
 ```
 into R console.
 ## Notes
-This package probably needs a lot of improvements. If you want to help with development, feel free to contact me or do whatever you want with the package.
+If you want to help with development, feel free to contact me or do whatever you want with the package.
