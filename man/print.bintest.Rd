@@ -23,24 +23,24 @@ Rostislav Linda
 
 \examples{
 ## The function is currently defined as
-function (x)
-{
-    cat("\n Multiple comparisons of binomial proportions:")
-    cat("\n =============================================\n")
-    print(x$mc)
-    cat("\n Numbers in first two columns depicts row numbers in input table.\n")
-    cat(" -----------------------------------------------------------------\n")
-    cat("\n Confidence intervals for probabilities:")
-    cat("\n =============================================\n")
-    cat("\n The estimate is computed for column named:", x$obs_variable)
-    cat("\n\n")
-    print(x$CI)
-    cat(" -----------------------------------\n")
-    cat("\n Error bar lengths:")
-    cat("\n =============================================\n")
-    print(x$errbars)
-    cat(" -----------------------\n")
-  }
+
+print.bintest<-function(x,...){
+  cat("\nMultiple comparisons of binomial proportions:")
+  cat("\n=============================================\n")
+  print(x$mc)
+  cat("\nRow names specifies currently compared treatments in respective row.\n")
+  cat("--------------------------------------------------------------------\n")
+  cat("\nConfidence intervals for probabilities:")
+  cat("\n=============================================\n")
+  cat("\nThe estimate is computed for column named:",x$obs_variable)
+  cat("\n\n")
+  print(x$CI)
+  cat("-----------------------------------\n")
+  cat("\nError bar lengths:")
+  cat("\n=============================================\n")
+  print(x$errbars)
+  cat("-----------------------\n")
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
