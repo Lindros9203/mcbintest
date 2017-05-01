@@ -1,4 +1,9 @@
 bin.test<-function(x,...){
+  
+  if (is.data.frame(x)!=TRUE){
+  stop("Input object is not data frame")
+  }
+  
   # Total column
   tot<-NULL
   for (i in 1:length(x[,1])){
