@@ -63,7 +63,7 @@ bin.test<-function(x,...){
   # Results 1
   current_comparison<-NULL
   for (i in 1:length(combs[,1])){
-    working_comp<-paste(x[combs[i,1],1],"-",x[combs[i,2],1])
+    working_comp<-paste0(x[combs[i,1],1],"-",x[combs[i,2],1])
     working_comp<-toString(working_comp)
     current_comparison<-append(current_comparison,working_comp)
   }
