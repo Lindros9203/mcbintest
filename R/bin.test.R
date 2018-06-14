@@ -84,14 +84,14 @@ bin.test<-function(x,alpha=0.05,...){
   i<-1;lower<-NULL
   for(i in 1:nrows){
     lower0<-lower
-    lower<-c(lower0,1-qbeta(0.975,n[i]-X[i]+1,X[i]))
+    lower<-c(lower0,1-qbeta(1-alpha/2,n[i]-X[i]+1,X[i]))
     i<-i+1
   }
   ##Upper bound
   i<-1;upper<-NULL
   for (i in 1:nrows){
     upper0<-upper
-    upper<-c(upper0,qbeta(0.975,X[i]+1,n[i]-X[i]))
+    upper<-c(upper0,qbeta(1-alpha/2,X[i]+1,n[i]-X[i]))
     i<-i+1
   }
   #Probability vector (no correction)
