@@ -1,4 +1,4 @@
-bin.test<-function(x,...){
+bin.test<-function(x,alpha=0.05,...){
   
   if (is.data.frame(x)!=TRUE){
   stop("Input object is not data frame")
@@ -50,7 +50,7 @@ bin.test<-function(x,...){
 
   }
   # Critical values
-  Qt0<-qtukey(0.95,nrows,Inf)
+  Qt0<-qtukey(1-alpha,nrows,Inf)
   Qt<-c(rep(Qt0,length(combs[,1])))
 
   # P-values vector
