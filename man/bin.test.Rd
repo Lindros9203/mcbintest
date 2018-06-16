@@ -22,7 +22,7 @@ For sample data, please see included data frame named \code{testtab}.
 \value{
 \item{mc}{A data frame with results of multiple comparisons. Row names specifies respective pairwise comparison.}
 \item{CI}{Confidence intervals for probability of ratio of counts in second/third column of \code{x}.}
-\item{errbars}{Length of error bars for denoting \code{1-alpha} CI in plots}
+\item{errbars}{Length of error bars for denoting \code{1-alpha} CI}
 \item{obs_variable}{Variable, for whose probability the confidence intervals are computed (name of second column of input data frame \code{x})}
 
 }
